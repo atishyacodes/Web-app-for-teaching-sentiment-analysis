@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Comic Neue', cursive;
+  background-color: #80b9de;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.fun-text {
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+.emoji-button {
+  transition: all 0.2s;
+}
+
+.emoji-button:hover {
+  transform: scale(1.1);
+}
